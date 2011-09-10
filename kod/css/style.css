@@ -1,0 +1,167 @@
+/*
+
+	Theme Name: The Junák 
+  Theme URI: http://themes.nakodujem.cz/skaut
+	Description: Free WP téma pro skautské oddíly a střediska volně k dispozici.
+	Author: Petr Hlubina
+	Version: 1.0
+	License:
+	License URI:
+	
+*/
+
+/* CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q {	quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {	content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* General styling */
+
+/************************************************************************************
+   FONT
+*************************************************************************************/
+@font-face {
+    font-family: 'The Mix Basic';
+    src: url('./font/TheMixBasic_TT6i.eot');
+    src: url('./font/TheMixBasic_TT6i.eot?iefix') format('eot'),
+         url('./font/TheMixBasic_TT6i.woff') format('woff'),
+         url('./font/TheMixBasic_TT6i.svg#webfontsd1SFdkI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { }
+body { background: url("../img/body.jpg") no-repeat scroll 50% 0 #E4ECEC; font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+
+a {	color: #ec008c;	text-decoration: underline; }
+a:hover, a:active, a:focus { text-decoration: none; }
+
+h1, h2, h3, h4 { font-family:'The Mix Basic', Arial, Verdana, sans-serif; }
+
+strong { font-weight: bold; }
+
+/* Content */
+
+#container { width: 960px; margin: 0 auto; }
+
+header { position: relative; height: 190px; }
+
+#menu { position: absolute; top: 120px; width: 960px; height:50px; background:#e9f2f5 url('../img/all.png') 0 0 repeat-x; text-align:left; font-family:'The Mix Basic', Arial, Verdana, sans-serif;}
+#menu ul { float:left; display:inline; overflow:hidden; margin:0 5px; font-size:16px;}
+#menu li { float:left; display:inline; margin:0 0 0 -1px;}
+#menu li a { line-height:20px; color:#333; text-decoration:none; display:block; padding:15px 0;}
+#menu li span { border-left:1px solid #e0e3e3; padding:0 15px; font-weight:normal;}
+#menu .active a, #menu li a:hover { color:#f15623; }
+
+#main { clear: both; }
+
+
+.oddily li { letter-spacing: 0; display:inline-block; *display:inline; zoom:1; margin: 0 19px 20px 0; vertical-align:top; width: 320px; height: 175px; position:relative; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -moz-box-shadow:1px 1px 0 rgba(0, 0, 0, .05); behavior:url('http://verejnost.skaut.cz/sites/all/themes/jpc/css/PIE.htc');}
+.oddily li.last-child { margin-right: 0; width: 275px; }
+.oddily h3 { font-size: 15px; margin:0;}
+.oddily a { text-decoration:none; color:#9e106e; display:block; height:176px; }
+.oddily a span { font-size:20px; font-weight:normal; background:#fff; padding:10px; position:absolute; bottom:10px; left:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; behavior:url('http://verejnost.skaut.cz/sites/all/themes/jpc/css/PIE.htc'); *behavior:none; }
+.oddily a:hover { color:#fff; }
+
+.oddily .szt {background: url("../img/szt.jpg") 0 0 no-repeat;}
+.oddily .seleska {background: url("../img/seleska.jpg") 0 0 no-repeat;}
+.oddily .edice {background: url("../img/seleska.jpg") 0 0 no-repeat;}
+
+
+.oddily .szt a:hover span { background:#9e106e; }
+.oddily .szt a:hover span:before { background-position:0 -47px; }
+
+
+
+
+
+.box-rounded {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #ffffff;
+    border-color: #D8E0E0;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    margin: 0 0 20px;
+}
+.box { background: #fff; margin:0 0 20px; border:1px solid #d8e0e0; border-width:0 1px 1px 0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; behavior:url('PIE.htc');}
+.box-inner { padding: 20px; }
+.last-child { margin-right: 0; }
+
+
+
+/************************************************************************************
+   SIMPLE (FAST) CLASS 
+*************************************************************************************/
+.l{display:inline; float:left;}
+.r{display:inline; float:right;}
+.col-h-l{float:left; display:inline; width:48%;}
+
+
+
+
+
+
+
+
+/* ==|== non-semantic helper classes ======================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+/* ==|== print styles ======================================================= */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
